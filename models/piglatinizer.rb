@@ -5,7 +5,7 @@ def piglatinize(sentence)
   words_array = sentence.split(" ")
   if words_array.length == 1
     word = words_array.pop
-    if %w(a e i o u A E I O U).include?(words[0])
+    if %w(a e i o u A E I O U).include?(word[0])
       piglatinized = word + 'way'
     else
       first_vowel = word[/[aeiouAEIOU]/]
