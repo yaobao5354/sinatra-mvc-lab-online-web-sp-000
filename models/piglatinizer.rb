@@ -14,8 +14,10 @@ def piglatinize(sentence)
     end
   else
     words_array.collect do |word|
+      binding.pry
       if %w(a e i o u A E I O U).include?(word[0])
         piglatinized = word + 'way'
+        binding.pry
       else
         first_vowel = word[/[aeiouAEIOU]/]
         char = word.split(/[aeiouAEIOU]/,2)
