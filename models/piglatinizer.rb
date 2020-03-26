@@ -6,7 +6,7 @@ def piglatinize(word)
     piglatinized = word + 'way'
   else
     binding.pry
-    char = word.split(/'a'+'e'+'i'+'o'+'u'/)
+    char = word.split(/[aeiou]/)
   end
 end
 
