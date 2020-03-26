@@ -23,9 +23,8 @@ def piglatinize(sentence)
         char = word.split(/[aeiouAEIOU]/,2)
         new_array << first_vowel+char[1]+char[0]+'ay'
       end
-      new_array
+      new_array.join(" ")
     end
-    binding.pry
   end
 
 end
