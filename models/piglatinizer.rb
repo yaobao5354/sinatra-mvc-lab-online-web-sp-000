@@ -1,7 +1,9 @@
 require 'pry'
 class PigLatinizer
 
-def piglatinize(word)
+def piglatinize(sentence)
+  words_array = sentence.split(" ")
+  binding.pry
   if %w(a e i o u A E I O U).include?(word[0])
     piglatinized = word + 'way'
   else
