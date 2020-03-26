@@ -24,7 +24,7 @@ def piglatinize(sentence)
       end
       new_array
     end
-    piglatinized = new_array.join(" ")
+    piglatinized = new_array.join(' ')
   end
 
 end
