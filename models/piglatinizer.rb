@@ -8,7 +8,6 @@ def piglatinize(word)
     first_vowel = word[/[aeiou]/]
     char = word.split(/[aeiou]/,2)
     piglatinized = char[1]+char[0]+'ay'
-    binding.pry
   end
 end
 
