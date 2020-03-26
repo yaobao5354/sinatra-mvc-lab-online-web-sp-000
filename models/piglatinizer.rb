@@ -13,16 +13,17 @@ def piglatinize(sentence)
       piglatinized = first_vowel+char[1]+char[0]+'ay'
     end
   else
-    words_array.collect do |word|
-      binding.pry
+    new_array = []
+    words_array.each do |word|
       if %w(a e i o u A E I O U).include?(word[0])
-        piglatinized = word + 'way'
+        new_array << word + 'way'
         binding.pry
       else
         first_vowel = word[/[aeiouAEIOU]/]
         char = word.split(/[aeiouAEIOU]/,2)
-        piglatinized = first_vowel+char[1]+char[0]+'ay'
+        new_array << first_vowel+char[1]+char[0]+'ay'
       end
+      new_array
     end
     binding.pry
   end
