@@ -23,6 +23,7 @@ def piglatinize(sentence)
         new_array << first_vowel+char[1]+char[0]+'ay'
       end
       new_array.join(" ")
+      binding.pry
     end
   end
 
